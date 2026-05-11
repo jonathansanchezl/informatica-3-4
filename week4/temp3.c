@@ -5,21 +5,21 @@ void CtoF(void);
 void FtoC(void);
 
 void CtoF(void){
-    int ce;
+    float ce;
     printf("enter Celcius:");
-    scanf("%d", &ce);
+    scanf("%f", &ce);
     // convert
-    int fa1 = (ce*1.8)+32;
-    printf("%d°C = %d°F \n",ce, fa1);
+    float fa1 = (ce*1.8)+32;
+    printf("%.2f°C = %.2f°F \n",ce, fa1);
 }
 
 void FtoC(void){
-int fa;
+float fa;
     printf("enter Fahrenheit:");
-    scanf("%d", &fa);
+    scanf("%f", &fa);
     // convert
-    int ce1 = (fa-32)/1.8;
-    printf("%d°F = %d°C \n",fa, ce1);
+    float ce1 = (fa-32)/1.8;
+    printf("%.2f°F = %.2f°C \n",fa, ce1);
 
 }
 
